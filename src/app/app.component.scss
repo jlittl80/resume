@@ -75,9 +75,11 @@
   .body-container {
     background-color: #151515;
     color: #e0e0e0;
-    padding: 2rem;
+    padding: 1rem;
 
     @media (min-width: 992px) {
+      padding: 2rem;
+
       .col-lg-6 {
         padding: 1rem;
       }
