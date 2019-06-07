@@ -18,6 +18,13 @@
     .logo img {
       display: block;
       margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (max-width: 991.98px) {
+      .logo img {
+        max-width: 200px;
+      }
     }
 
     .name-title {
@@ -56,6 +63,13 @@
         }
       }
     }
+
+    @media (max-width: 991.98px) {
+      .footer {
+        position: relative;
+        bottom: 0;
+      }
+    }
   }
 
   .body-container {
@@ -63,12 +77,10 @@
     color: #e0e0e0;
     padding: 2rem;
 
-    .col-6:first-child {
-      padding-right: 1rem;
-    }
-
-    .col-6:last-child {
-      padding-left: 1rem;
+    @media (min-width: 992px) {
+      .col-lg-6 {
+        padding: 1rem;
+      }
     }
 
     .info-container {
