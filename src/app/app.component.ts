@@ -72,7 +72,7 @@ export class AppComponent {
     },
   ];
 
-  educations: Array<InfoCards> = [
+  educations: Array<InfoCard> = [
     {
       title: "Cert. 4 IT & Multimedia",
       date: "Feb 2012 - Feb 2013",
