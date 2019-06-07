@@ -4,7 +4,7 @@ Resume of Jordie Little, made with Angular8
 Deployed with Netlify.
 https://friendly-dubinsky-523c1e.netlify.com/
 
-![screenshot](https://github.com/jlittl80/resume/blob/master/screenshot.png
+![screenshot](https://github.com/jlittl80/resume/blob/master/screenshot.png)
 
 ## Development server
 
