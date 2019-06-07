@@ -1,0 +1,30 @@
+.info-card-container {
+  margin-bottom: 15px;
+
+  .info-card-title {
+    font-size: 110%;
+  }
+
+  .info-card-time-place {
+    font-size: 80%;
+    margin-bottom: 5px;
+    color: #999;
+
+    div {
+      display: inline-block;
+    }
+
+    .time {
+      padding-right: 10px;
+      border-right: 2px solid #772122;
+    }
+
+    .place {
+      padding-left: 10px;
+    }
+  }
+
+  .info-card-short {
+    font-size: 90%;
+  }
+}
