@@ -31,6 +31,20 @@
           </div>
         </div>
         <div class="col-md-12 col-lg-6">
+          <div class="prev-work info-container">
+            <div class="info-header">
+              <span>Previous Work</span>
+            </div>
+            <div class="info-body">
+              <div class="proj-container" *ngFor="let project of projects">
+                <a class="proj-title" href="{{project.link}}" target="_blank" rel="external">
+                  {{project.title}} <i class="fa fa-external-link"></i>
+                </a>
+                <span class="proj-year">{{project.year}}</span> <i class="fa" [class.fa-angle-left]="!project.show" [class.fa-angle-down]="project.show" (click)="project.show = !project.show"></i>
+                <div class="proj-short" [@slideUpDown]="project.show">{{project.short}}</div>
+              </div>
+            </div>
+          </div>
           <div class="development-skills info-container">
             <div class="info-header">
               <span>Development Skills</span>

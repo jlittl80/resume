@@ -1,14 +1,78 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InfoCard } from './components/info-card/InfoCard';
+import { slideUpDown } from 'src/app/animations/slideUpDown';
+import { trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  animations: [
+    trigger('slideUpDown', slideUpDown()),
+  ],
   styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent {
+  projects: Array<Object> = [
+    {
+      title: "PKMN TCG Vault",
+      year: "2019",
+      link: "https://pkmntcgvault.com/",
+      show: false,
+      short: `Project myself and a friend started 2 years ago. We started using PHP,
+      however we decided to change to Angular 7 + Nebular. (If it isnt up, its
+      because we havent released yet. Let me know if thats the case and Ill start it for a day)`,
+    },
+    {
+      title: "This Resume",
+      year: "2019",
+      link: "https://github.com/jlittl80/resume",
+      show: false,
+      short: `This is what you're looking at.`,
+    },
+    {
+      title: "PKMN TCG Vault (Except with PHP)",
+      year: "2017",
+      link: "#",
+      show: false,
+      short: `The original PKMN TCV Vault me and my friend started in 2017, has
+      since been replaced with the aforementioned Angular 7 + Nebular. It also
+      was the first time using GIT.`,
+    },
+    {
+      title: "GamestorePOS",
+      year: "2013",
+      link: "https://github.com/jlittl80/GamestorePOS",
+      show: false,
+      short: `Made using PHP + jQuery, this was an assignment for grade 12 ICT
+      (Information and Computer Technologies)`,
+    },
+    {
+      title: "NuroIM",
+      year: "2013",
+      link: "https://github.com/jlittl80/NuroIM",
+      show: false,
+      short: `Made using PHP + jQuery, another silly project with a friend about
+      a chat application i had made in VB.NET during ICT.`,
+    },
+    {
+      title: "Affordable Car Mods",
+      year: "2013",
+      link: "https://github.com/jlittl80/AffCarMods",
+      show: false,
+      short: `More PHP + jQuery, this is a side project me and my friend
+      decided to do during high school.`,
+    },
+    {
+      title: "My First Website",
+      year: "2012",
+      link: "https://github.com/jlittl80/FirstWebsite",
+      show: false,
+      short: `Created during my Cert. 4, my first ever website.`,
+    },
+  ];
+
   skills: Array<String> = [
     "Node.js - 6 Months",
     "Angular 7/8 - 6 Months",
@@ -40,7 +104,7 @@ export class AppComponent {
       short: `Dealt with receiving, processing, and distributing deliveries
       with relevant departments. Includes dealing with paperwork, department
       managers, suppliers, discrepancies related to orders, and returns to
-      warehouses/vendors. Furthermore this involved dealing with managerial jobs 
+      warehouses/vendors. Furthermore this involved dealing with managerial jobs
       such as generator and safety checks, having extensive knowledge in operating
       the alarm system, assisting tradesmen with access to relevant electrical/plant
       room locations, and extensive knowledge in the in-store IT systems.`,
