@@ -38,37 +38,35 @@ export class AppComponent {
       date: "14th May 2018 - Present",
       place: "Woolworths",
       short: `Dealt with receiving, processing, and distributing deliveries
-      with relevant departments. Includes dealing with paperwork, other
-      managers, suppliers, discrepancies related to orders coming in
-      wrong/never coming in, and returns to warehouses/vendors.
-      Also dealt with managerial jobs such as generator and safety
-      checks, extensive knowledge in operating our alarm system,
-      assisting tradesmen with access to relevant electrical/plant
-      room locations, and extensive knowledge in our in-store IT systems.`,
+      with relevant departments. Includes dealing with paperwork, department
+      managers, suppliers, discrepancies related to orders, and returns to
+      warehouses/vendors. Furthermore this involved dealing with managerial jobs 
+      such as generator and safety checks, having extensive knowledge in operating
+      the alarm system, assisting tradesmen with access to relevant electrical/plant
+      room locations, and extensive knowledge in the in-store IT systems.`,
     },
     {
       title: "Longlife Team Member",
       date: "25th Jan 2016 - 14th May 2018",
       place: "Woolworths",
-      short: `Included the same expectations as the Deli, except less focus
-      on cleaning and food safety and more involvement with inventory
-      management, including ordering stock, investigating discrepancies,
-      assisting other staff and departments with issues relating to inventory.`,
+      short: `Primarily working as a team to maintain a high level presentation
+      of the department. Additional duties involved inventory management, including
+      ordering stock, investigating discrepancies, assisting other staff and
+      departments with issues relating to inventory.`,
     },
     {
       title: "Deli Team Member",
       date: "18th Nov 2012 - 25th Jan 2016",
       place: "Woolworths",
       short: `Organising a fresh food department as part of a team, including
-      cleaning, customer service, food safety, maintaining a high standard
-      including presentation of the department, working through unforeseen circumstances.`,
+      cleaning, customer service, food safety, maintaining a high standard including
+      presentation of the department, working through unforeseen circumstances.`,
     },
     {
       title: "Trainee",
       date: "23rd Feb 2012 - 5th Nov 2012",
       place: "Intouch Consultancy",
-      short: `This was a paid traineeship, run in conjunction with my Certificate
-      4 in IT and Multimedia.`,
+      short: `Traineeship run in conjunction with  Certificate 4 in IT and Multimedia.`,
     },
   ];
 
@@ -78,14 +76,14 @@ export class AppComponent {
       date: "Feb 2012 - Feb 2013",
       place: "Prime Learning",
       short: `ICA40805 – Completed part-time during high school. Achievements
-      incl. making and publishing a game on the App Store and building
-      an extremely basic static website.`,
+      include making and publishing a game on the App Store and building
+      a basic static website.`,
     },
     {
-      title: "Grade 12 GCE",
+      title: "Queensland Certificate of Education",
       date: "Jan 2009 - Dec 2013",
       place: "Pacific Pines State High School",
-      short: `Passed Grade 12`,
+      short: `Successful completion of secondary education.`,
     },
   ];
 }
