@@ -4,6 +4,7 @@ import { trigger } from '@angular/animations';
 import { ThemeService } from 'src/app/components/theme-switcher/theme.service';
 import { InfoCard } from 'src/app/components/info-card/InfoCard';
 import { slideUpDown } from 'src/app/animations/slideUpDown';
+import { DateRangePipe } from 'src/app/pipes/date-range.pipe';
 
 @Component({
   selector: 'app-root',
@@ -84,20 +85,98 @@ export class AppComponent {
     },
   ];
 
-  skills: Array<String> = [
-    "Node.js - 6 Months",
-    "Angular 7/8 - 6 Months",
-    "Nebular - 6 Months",
-    "Typescript - 6 Months",
-    "SCSS - 6 Months",
-    "PHP 5/7 - 2-4 Years",
-    "jQuery - 3 Years",
-    "SQL - 4 Years",
-    "Google Cloud Platform - 2 Years",
-    "Linux - 3 Years",
-    "C# - 6 Months",
-    "Visual Basic - 1 Year",
-    "Googling - 10 Years",
+  skills: Array<Object> = [
+    {
+      name: "Node.js",
+      dateRange: {
+        start: "1/1/2019",
+        end: 0,
+      },
+    },
+    {
+      name: "Angular 7/8",
+      dateRange: {
+        start: "1/1/2019",
+        end: 0,
+      },
+    },
+    {
+      name: "Nebular",
+      dateRange: {
+        start: "1/1/2019",
+        end: 0,
+      },
+    },
+    {
+      name: "Typescript",
+      dateRange: {
+        start: "1/1/2019",
+        end: 0,
+      },
+    },
+    {
+      name: "SCSS",
+      dateRange: {
+        start: "1/1/2019",
+        end: 0,
+      },
+    },
+    {
+      name: "PHP 5/7",
+      dateRange: {
+        start: "6/1/2012",
+        end: "1/1/2017",
+      },
+    },
+    {
+      name: "jQuery",
+      dateRange: {
+        start: "6/1/2012",
+        end: "1/1/2017",
+      },
+    },
+    {
+      name: "SQL",
+      dateRange: {
+        start: "6/1/2012",
+        end: "1/1/2017",
+      },
+    },
+    {
+      name: "Google Cloud Platform",
+      dateRange: {
+        start: "1/1/2016",
+        end: 0,
+      },
+    },
+    {
+      name: "Linux",
+      dateRange: {
+        start: "1/1/2016",
+        end: "7/1/2017",
+      },
+    },
+    {
+      name: "C#",
+      dateRange: {
+        start: "1/1/2012",
+        end: "7/1/2012",
+      },
+    },
+    {
+      name: "Visual Basic",
+      dateRange: {
+        start: "1/1/2011",
+        end: "1/1/2012",
+      },
+    },
+    {
+      name: "Googling",
+      dateRange: {
+        start: "1/1/2010",
+        end: 0,
+      },
+    },
   ];
 
   todos: Array<string> = [

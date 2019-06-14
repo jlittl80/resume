@@ -5,7 +5,7 @@ export const themes = {
     '--textColorPrimary': '#000',
     '--textColorSecondary': '#151515',
     '--textColorDark': '#4a4a4a',
-    '--textHoverHighlight': '#000',
+    '--textHoverHighlight': '#848484',
     '--colorHighlight': '#772122',
   },
   darkTheme: {

@@ -125,7 +125,7 @@
 
         &:hover {
           text-decoration: none;
-          text-shadow: 0px 0px 15px var(--textColorPrimary);
+          text-shadow: 0px 0px 15px var(--textHoverHighlight);
           transition: 0.1s text-shadow ease-in;
         }
 

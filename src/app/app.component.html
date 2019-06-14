@@ -51,7 +51,9 @@
               <span>Development Skills</span>
             </div>
             <div class="info-body">
-              <span *ngFor="let skill of skills">{{skill}}</span>
+              <span *ngFor="let skill of skills">
+                {{skill.name}} - {{skill.dateRange.start | myDateRange:skill.dateRange.end}}
+              </span>
             </div>
           </div>
           <div class="todo info-container">
