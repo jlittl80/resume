@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InfoCard } from './components/info-card/InfoCard';
-import { slideUpDown } from 'src/app/animations/slideUpDown';
 import { trigger } from '@angular/animations';
+import { ThemeService } from 'src/app/components/theme-switcher/theme.service';
+import { InfoCard } from 'src/app/components/info-card/InfoCard';
+import { slideUpDown } from 'src/app/animations/slideUpDown';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,16 @@ import { trigger } from '@angular/animations';
 })
 
 export class AppComponent {
+  currentTheme: string;
+
+  constructor(private themeService: ThemeService) {
+    this.themeService.getActiveTheme().subscribe((currTheme: string) => this.currentTheme = currTheme);
+  }
+
+  toggleTheme() {
+    this.themeService.setActiveTheme((this.currentTheme == "lightTheme" ? "darkTheme": "lightTheme"));
+  }
+
   projects: Array<Object> = [
     {
       title: "PKMN TCG Vault",
@@ -32,7 +43,7 @@ export class AppComponent {
       short: `This is what you're looking at.`,
     },
     {
-      title: "PKMN TCG Vault (Except with PHP)",
+      title: "PKMN TCG Vault (PHP)",
       year: "2017",
       link: "#",
       show: false,

@@ -8,7 +8,8 @@
   .info-card-time-place {
     font-size: 80%;
     margin-bottom: 5px;
-    color: #999;
+    color: var(--textColorDark);
+    transition: 0.1s color ease-in;
 
     div {
       display: inline-block;
@@ -16,7 +17,7 @@
 
     .time {
       padding-right: 10px;
-      border-right: 2px solid #772122;
+      border-right: 2px solid var(--colorHighlight);
     }
 
     .place {
@@ -26,5 +27,7 @@
 
   .info-card-short {
     font-size: 90%;
+    color: var(--textColorSecondary);
+    transition: 0.1s color ease-in;
   }
 }
