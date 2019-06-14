@@ -7,6 +7,7 @@ export class DateRangePipe implements PipeTransform {
   transform(startDate: string, endDate?: string): string {
     var returnString = "";
     var newStartDate = new Date(startDate);
+    // @ts-ignore
     var newEndDate = (endDate === 0 ? new Date() : new Date(endDate));
     var difference = newEndDate.getTime() - newStartDate.getTime();
     //Build string
