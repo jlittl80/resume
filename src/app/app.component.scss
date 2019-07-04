@@ -48,7 +48,7 @@
       position: absolute;
       bottom: 20px;
 
-      a {
+      a, span {
         color: var(--textColorPrimary);
         font-size: 30px;
         transition: 0.3s text-shadow ease-in;
