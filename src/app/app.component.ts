@@ -87,7 +87,28 @@ export class AppComponent {
 
   skills: Array<Object> = [
     {
-      name: "Node.js",
+      name: "HTML/CSS/JS",
+      dateRange: {
+        start: "1/8/2012",
+        end: 0,
+      },
+    },
+    {
+      name: "SCSS",
+      dateRange: {
+        start: "1/1/2019",
+        end: 0,
+      },
+    },
+    {
+      name: "jQuery",
+      dateRange: {
+        start: "6/1/2012",
+        end: "1/1/2017",
+      },
+    },
+    {
+      name: "Typescript",
       dateRange: {
         start: "1/1/2019",
         end: 0,
@@ -108,20 +129,6 @@ export class AppComponent {
       },
     },
     {
-      name: "Typescript",
-      dateRange: {
-        start: "1/1/2019",
-        end: 0,
-      },
-    },
-    {
-      name: "SCSS",
-      dateRange: {
-        start: "1/1/2019",
-        end: 0,
-      },
-    },
-    {
       name: "PHP 5/7",
       dateRange: {
         start: "6/1/2012",
@@ -129,14 +136,7 @@ export class AppComponent {
       },
     },
     {
-      name: "jQuery",
-      dateRange: {
-        start: "6/1/2012",
-        end: "1/1/2017",
-      },
-    },
-    {
-      name: "SQL",
+      name: "MySQL",
       dateRange: {
         start: "6/1/2012",
         end: "1/1/2017",
@@ -147,6 +147,13 @@ export class AppComponent {
       dateRange: {
         start: "1/1/2016",
         end: 0,
+      },
+    },
+    {
+      name: "Stripe",
+      dateRange: {
+        start: "1/6/17",
+        end: "1/6/18",
       },
     },
     {

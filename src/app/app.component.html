@@ -52,7 +52,7 @@
             </div>
             <div class="info-body">
               <span *ngFor="let skill of skills">
-                {{skill.name}} - {{skill.dateRange.start | myDateRange:skill.dateRange.end}}
+                <span>{{skill.name}}</span> - <span [innerHtml]="skill.dateRange.start | myDateRange:skill.dateRange.end"></span>
               </span>
             </div>
           </div>
