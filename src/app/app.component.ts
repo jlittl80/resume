@@ -196,7 +196,7 @@ export class AppComponent {
   works: Array<InfoCard> = [
     {
       title: "Head Reserve Stockhand",
-      date: "14th May 2018 - Present",
+      date: "14th May 2018 - 30th Sept 2019",
       place: "Woolworths",
       short: `Dealt with receiving, processing, and distributing deliveries
       with relevant departments. Includes dealing with paperwork, department
