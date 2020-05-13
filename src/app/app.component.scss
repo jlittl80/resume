@@ -11,9 +11,17 @@
   .header-container {
     background-color: var(--headerBackground);
     color: var(--textColorPrimary);
-    padding: 2rem;
     transition: 0.1s background-color ease-in;
     transition: 0.1s color ease-in;
+
+    .header-fixed {
+      padding: 2rem;
+      max-width: inherit;
+      height: 100%;
+      @media (min-width: 992px) {
+        position: fixed;
+      }
+    }
 
     .logo img {
       display: block;
@@ -28,7 +36,7 @@
     }
 
     .name-title {
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       padding-top: 2rem;
 
       h1, h3 {
@@ -40,7 +48,8 @@
       }
 
       h3 {
-        font-size: 2rem;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1.5rem;
       }
     }
 
@@ -130,7 +139,7 @@
           transition: 0.1s text-shadow ease-in;
         }
 
-        .fa-external-link {
+        .la-external-link {
           color: #007bff;
           font-size: 12px;
           vertical-align: super;
@@ -147,7 +156,7 @@
         transition: 0.1s color ease-in;
       }
 
-      .fa-angle-left, .fa-angle-down {
+      .la-angle-left, .la-angle-down {
         margin-left: 10px;
         cursor: pointer;
       }

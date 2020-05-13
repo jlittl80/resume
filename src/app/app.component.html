@@ -1,19 +1,22 @@
 <div class="container-fluid" appTheme>
   <div class="row no-gutters">
     <div class="header-container col-12 col-lg-3">
-      <div class="logo"><img src="assets/logo.svg" alt="Logo for project i work heavily on"></div>
-      <div class="name-title">
-        <h1>Jordie Little</h1>
-        <h3>Programmer/Web developer</h3>
-      </div>
-      <div class="footer">
-        <a href="https://github.com/jlittl80" target="_blank" rel="external"><span class="hidden">Github</span><i class="fa fa-github"></i></a>
-        <span><i class="fa" [class.fa-toggle-off]="currentTheme == 'lightTheme'" [class.fa-toggle-on]="currentTheme == 'darkTheme'" (click)="toggleTheme()"></i></span>
+      <div class="header-fixed">
+        <div class="logo"><img src="assets/logo.svg" alt="Logo for project i work heavily on"></div>
+        <div class="name-title">
+          <h1>Jordie Little</h1>
+          <h3>Programmer/Web Developer</h3>
+        </div>
+        <div class="footer">
+          <a href="https://github.com/jlittl80" target="_blank" rel="external"><span class="hidden">Github</span><i class="la la-github"></i></a>
+          <a href="https://gitlab.com/jordielittle" target="_blank" rel="external"><span class="hidden">Gitlab</span><i class="la la-gitlab lab la-gitlab"></i></a>
+          <span><i class="las" [class.la-toggle-off]="currentTheme == 'lightTheme'" [class.la-toggle-on]="currentTheme == 'darkTheme'" (click)="toggleTheme()"></i></span>
+        </div>
       </div>
     </div>
     <div class="body-container col-12 col-lg-9">
       <div class="row no-gutters">
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-8">
           <div class="work-experience info-container">
             <div class="info-header">
               <span>Work Experience</span>
@@ -31,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-4">
           <div class="prev-work info-container">
             <div class="info-header">
               <span>Previous Work</span>
@@ -39,9 +42,9 @@
             <div class="info-body">
               <div class="proj-container" *ngFor="let project of projects">
                 <a class="proj-title" href="{{project.link}}" target="_blank" rel="external">
-                  {{project.title}} <i class="fa fa-external-link"></i>
+                  {{project.title}} <i class="la la-external-link"></i>
                 </a>
-                <span class="proj-year">{{project.year}}</span> <i class="fa" [class.fa-angle-left]="!project.show" [class.fa-angle-down]="project.show" (click)="project.show = !project.show"></i>
+                <span class="proj-year">{{project.year}}</span> <i class="la" [class.la-angle-left]="!project.show" [class.la-angle-down]="project.show" (click)="project.show = !project.show"></i>
                 <div class="proj-short" [@slideUpDown]="project.show">{{project.short}}</div>
               </div>
             </div>
