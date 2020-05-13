@@ -28,6 +28,16 @@ export class AppComponent {
 
   projects: Array<Object> = [
     {
+      title: "Docker Speedtest",
+      year: "2020",
+      link: "https://github.com/jlittl80/docker-speedtest",
+      show: false,
+      short: `A Node server + Python script designed to run on a Raspberry Pi that
+      runs an internet speedtest and logs the results, which can be accessed over the network
+      in a viewable format. Forked from the original, I made security updates, QOL and mobile changes
+      to greatly improve useability, and I now run this 24/7`,
+    },
+    {
       title: "PKMN TCG Vault",
       year: "2019",
       link: "https://pkmntcgvault.com/",
@@ -188,12 +198,20 @@ export class AppComponent {
 
   todos: Array<string> = [
     "Learn more about Mongo",
-    "Continue developing skills related to Angular",
     "Learn the basics of React",
     "Continue work on personal projects",
   ]
 
   works: Array<InfoCard> = [
+    {
+      title: "Warehouse Assistant",
+      date: "28th Oct 2019 - Present",
+      place: "Village Roadshow Theme Parks",
+      short: `Dealing with receiving, processing, and distributing deliveries
+      throughout the VRTP family of theme parks. Performing quality assurance
+      and reporting for high risk items, and performing daily and weekly checks
+      on equipment.`,
+    },
     {
       title: "Head Reserve Stockhand",
       date: "14th May 2018 - 30th Sept 2019",
@@ -201,7 +219,7 @@ export class AppComponent {
       short: `Dealt with receiving, processing, and distributing deliveries
       with relevant departments. Includes dealing with paperwork, department
       managers, suppliers, discrepancies related to orders, and returns to
-      warehouses/vendors. Furthermore this involved dealing with managerial jobs
+      warehouses/vendors. Furthermore, this involved dealing with managerial jobs
       such as generator and safety checks, having extensive knowledge in operating
       the alarm system, assisting tradesmen with access to relevant electrical/plant
       room locations, and extensive knowledge in the in-store IT systems.`,
