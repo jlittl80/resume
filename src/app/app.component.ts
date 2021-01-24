@@ -28,6 +28,15 @@ export class AppComponent {
 
   projects: Array<Object> = [
     {
+      title: "AWS Internal Work",
+      year: "2021",
+      link: "#",
+      show: false,
+      short: `Programming and scripting work on internal AWS tools to increase
+      the productivity and availability of information to technicians, to reach
+      more informed decisions faster, and to improve processes tech’s follow`,
+    },
+    {
       title: "Docker Speedtest",
       year: "2020",
       link: "https://github.com/jlittl80/docker-speedtest",
@@ -204,8 +213,22 @@ export class AppComponent {
 
   works: Array<InfoCard> = [
     {
+      title: "Data Centre Technician",
+      date: "3rd Aug 2020 - Present",
+      place: "Amazon Web Services",
+      short: `Dealing with the day-to-day responsibilities of a Data Centre Tech.
+      including break-fix work on server and network systems, taking on/creating
+      projects outside the scope of normal repair work to fix/improve equipment or
+      processes, and doing weekly/monthly checks on instruments and equipment to
+      verify everything is in order, and to remediate any issues. Co-ordinating
+      with other teams locally and internationally to resolve different issues,
+      or complete much larger projects that can have global impacts. Training/sharing
+      information with co-workers/globally to better improve other technicians,
+      or find flaws in the ways we are currently doing things.`,
+    },
+    {
       title: "Warehouse Assistant",
-      date: "28th Oct 2019 - Present",
+      date: "28th Oct 2019 - 13th July 2020",
       place: "Village Roadshow Theme Parks",
       short: `Dealing with receiving, processing, and distributing deliveries
       throughout the VRTP family of theme parks. Performing quality assurance
