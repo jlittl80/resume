@@ -25,12 +25,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss",
               "node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -95,15 +95,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -120,6 +116,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Resume"
+    }
+  },
+  "defaultProject": "Resume",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
